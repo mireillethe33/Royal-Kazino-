@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: lucky-royale
+    runtime: node
+    plan: free
+    buildCommand: echo ok
+    startCommand: node server.js
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: ADMIN_IDS
+        value: "7733792615"
